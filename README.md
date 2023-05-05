@@ -5,7 +5,8 @@ First you need to upload the entire folder with files to the directory /home/YOU
 Then run this command if you need to convert many files
 
 example:
-```for t in /home/YOUR_NAME/bcftools-1.9/NAME_FOLDER/*
+```
+for t in /home/YOUR_NAME/bcftools-1.9/NAME_FOLDER/*
 do 
          bcftools query -f'%CHROM\t%POS0\t%END\t%ID\n'  $t > $t.bed
 done
